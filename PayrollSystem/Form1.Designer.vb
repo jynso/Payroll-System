@@ -30,17 +30,19 @@ Partial Class Login
         txtboxusername = New TextBox()
         Labelwelcome = New Label()
         btnlogin = New Button()
+        whale = New PictureBox()
         CType(dolphin, ComponentModel.ISupportInitialize).BeginInit()
+        CType(whale, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' dolphin
         ' 
-        dolphin.BackColor = Color.FloralWhite
+        dolphin.BackColor = Color.FromArgb(CByte(244), CByte(242), CByte(243))
         dolphin.Image = CType(resources.GetObject("dolphin.Image"), Image)
-        dolphin.Location = New Point(-316, -1)
+        dolphin.Location = New Point(245, 370)
         dolphin.Name = "dolphin"
-        dolphin.Size = New Size(1421, 556)
-        dolphin.SizeMode = PictureBoxSizeMode.Zoom
+        dolphin.Size = New Size(699, 324)
+        dolphin.SizeMode = PictureBoxSizeMode.StretchImage
         dolphin.TabIndex = 0
         dolphin.TabStop = False
         ' 
@@ -49,7 +51,7 @@ Partial Class Login
         Labelpassword.AutoSize = True
         Labelpassword.BackColor = Color.Transparent
         Labelpassword.Font = New Font("Montserrat Medium", 10.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Labelpassword.ForeColor = Color.Black
+        Labelpassword.ForeColor = Color.FromArgb(CByte(101), CByte(98), CByte(86))
         Labelpassword.Location = New Point(305, 337)
         Labelpassword.Name = "Labelpassword"
         Labelpassword.Size = New Size(130, 30)
@@ -58,9 +60,10 @@ Partial Class Login
         ' 
         ' txtboxpassword
         ' 
+        txtboxpassword.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtboxpassword.Location = New Point(276, 405)
         txtboxpassword.Name = "txtboxpassword"
-        txtboxpassword.Size = New Size(229, 31)
+        txtboxpassword.Size = New Size(229, 32)
         txtboxpassword.TabIndex = 16
         ' 
         ' Labelusername
@@ -68,7 +71,7 @@ Partial Class Login
         Labelusername.AutoSize = True
         Labelusername.BackColor = Color.Transparent
         Labelusername.Font = New Font("Montserrat Medium", 10.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Labelusername.ForeColor = Color.Black
+        Labelusername.ForeColor = Color.FromArgb(CByte(101), CByte(98), CByte(86))
         Labelusername.Location = New Point(305, 209)
         Labelusername.Name = "Labelusername"
         Labelusername.Size = New Size(135, 30)
@@ -77,9 +80,10 @@ Partial Class Login
         ' 
         ' txtboxusername
         ' 
+        txtboxusername.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtboxusername.Location = New Point(264, 277)
         txtboxusername.Name = "txtboxusername"
-        txtboxusername.Size = New Size(241, 31)
+        txtboxusername.Size = New Size(241, 32)
         txtboxusername.TabIndex = 14
         ' 
         ' Labelwelcome
@@ -87,7 +91,7 @@ Partial Class Login
         Labelwelcome.AutoSize = True
         Labelwelcome.BackColor = Color.Transparent
         Labelwelcome.Font = New Font("Montserrat", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Labelwelcome.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Labelwelcome.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
         Labelwelcome.Location = New Point(172, 85)
         Labelwelcome.Name = "Labelwelcome"
         Labelwelcome.Size = New Size(399, 99)
@@ -97,6 +101,7 @@ Partial Class Login
         ' btnlogin
         ' 
         btnlogin.Font = New Font("Montserrat Medium", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnlogin.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
         btnlogin.Location = New Point(314, 481)
         btnlogin.Name = "btnlogin"
         btnlogin.Size = New Size(112, 53)
@@ -104,12 +109,23 @@ Partial Class Login
         btnlogin.Text = "Login"
         btnlogin.UseVisualStyleBackColor = True
         ' 
+        ' whale
+        ' 
+        whale.Image = CType(resources.GetObject("whale.Image"), Image)
+        whale.Location = New Point(-396, -114)
+        whale.Name = "whale"
+        whale.Size = New Size(942, 423)
+        whale.SizeMode = PictureBoxSizeMode.Zoom
+        whale.TabIndex = 18
+        whale.TabStop = False
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FloralWhite
+        BackColor = Color.FromArgb(CByte(244), CByte(242), CByte(243))
         ClientSize = New Size(743, 618)
+        Controls.Add(whale)
         Controls.Add(Labelpassword)
         Controls.Add(txtboxpassword)
         Controls.Add(Labelusername)
@@ -121,6 +137,7 @@ Partial Class Login
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
         CType(dolphin, ComponentModel.ISupportInitialize).EndInit()
+        CType(whale, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -132,5 +149,6 @@ Partial Class Login
     Friend WithEvents txtboxusername As TextBox
     Friend WithEvents Labelwelcome As Label
     Friend WithEvents btnlogin As Button
+    Friend WithEvents whale As PictureBox
 
 End Class

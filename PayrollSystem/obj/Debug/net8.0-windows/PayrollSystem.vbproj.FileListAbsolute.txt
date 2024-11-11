@@ -37,3 +37,4 @@ C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\obj\Debug\net8.0-windows
 C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\obj\Debug\net8.0-windows\PayrollSystem.Resources.resources
 C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\obj\Debug\net8.0-windows\PayrollSystem.DashboardAdmin.resources
 C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\obj\Debug\net8.0-windows\PayrollSystem.DashboardEmp.resources
+C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\obj\Debug\net8.0-windows\PayrollSystem.sourcelink.json
