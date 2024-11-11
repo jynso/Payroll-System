@@ -25,6 +25,7 @@ Partial Class DashboardEmp
         Labelname = New Label()
         Labelhello = New Label()
         Panel1 = New Panel()
+        Btnlogout = New Button()
         SuspendLayout()
         ' 
         ' Labelname
@@ -32,8 +33,8 @@ Partial Class DashboardEmp
         Labelname.AutoSize = True
         Labelname.BackColor = Color.Transparent
         Labelname.Font = New Font("Montserrat", 25.9999981F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Labelname.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Labelname.Location = New Point(218, 31)
+        Labelname.ForeColor = Color.FromArgb(CByte(219), CByte(90), CByte(66))
+        Labelname.Location = New Point(206, 56)
         Labelname.Name = "Labelname"
         Labelname.Size = New Size(305, 72)
         Labelname.TabIndex = 18
@@ -45,7 +46,7 @@ Partial Class DashboardEmp
         Labelhello.BackColor = Color.Transparent
         Labelhello.Font = New Font("Montserrat", 25.9999981F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Labelhello.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Labelhello.Location = New Point(47, 31)
+        Labelhello.Location = New Point(35, 56)
         Labelhello.Name = "Labelhello"
         Labelhello.Size = New Size(200, 72)
         Labelhello.TabIndex = 17
@@ -53,11 +54,23 @@ Partial Class DashboardEmp
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.White
-        Panel1.Location = New Point(47, 145)
+        Panel1.BackColor = Color.FromArgb(CByte(227), CByte(165), CByte(135))
+        Panel1.Location = New Point(47, 195)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(331, 306)
+        Panel1.Size = New Size(658, 306)
         Panel1.TabIndex = 16
+        ' 
+        ' Btnlogout
+        ' 
+        Btnlogout.BackColor = Color.FromArgb(CByte(158), CByte(188), CByte(159))
+        Btnlogout.FlatStyle = FlatStyle.Popup
+        Btnlogout.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btnlogout.Location = New Point(584, 56)
+        Btnlogout.Name = "Btnlogout"
+        Btnlogout.Size = New Size(121, 58)
+        Btnlogout.TabIndex = 20
+        Btnlogout.Text = "Log out"
+        Btnlogout.UseVisualStyleBackColor = False
         ' 
         ' DashboardEmp
         ' 
@@ -65,6 +78,7 @@ Partial Class DashboardEmp
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FloralWhite
         ClientSize = New Size(743, 618)
+        Controls.Add(Btnlogout)
         Controls.Add(Labelname)
         Controls.Add(Labelhello)
         Controls.Add(Panel1)
@@ -79,4 +93,5 @@ Partial Class DashboardEmp
     Friend WithEvents Labelname As Label
     Friend WithEvents Labelhello As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Btnlogout As Button
 End Class

@@ -100,6 +100,7 @@ Partial Class Login
         ' 
         ' btnlogin
         ' 
+        btnlogin.FlatStyle = FlatStyle.Popup
         btnlogin.Font = New Font("Montserrat Medium", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnlogin.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
         btnlogin.Location = New Point(314, 481)
@@ -133,6 +134,7 @@ Partial Class Login
         Controls.Add(Labelwelcome)
         Controls.Add(btnlogin)
         Controls.Add(dolphin)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "Login"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"

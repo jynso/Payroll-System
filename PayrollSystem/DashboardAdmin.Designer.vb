@@ -102,6 +102,7 @@ Partial Class DashboardAdmin
         Controls.Add(Btnpayslip)
         Controls.Add(Labelname)
         Controls.Add(Labelhello)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "DashboardAdmin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardAdmin"

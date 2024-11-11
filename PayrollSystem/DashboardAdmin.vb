@@ -32,4 +32,10 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Btnmanage_Click(sender As Object, e As EventArgs) Handles Btnmanage.Click
+        ManageEmp.Show()
+    End Sub
+
+
 End Class
