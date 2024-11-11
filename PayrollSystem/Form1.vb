@@ -1,7 +1,24 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-
+﻿Imports System.Data.SQLite
 Public Class Login
+
+    Public dbCommand As String = ""
+    Public bindinSrc As BindingSource
+
+    Public dbName As String = "Information.db"
+    Public dbPath As String = Application.StartupPath & "\" & dbName
+    Public connString As String = "Data Source=" & dbPath & ";Version=3"
+
+    Public connection As New SQLiteConnection(connString)
+    Public command As New SQLiteCommand("", connection)
+
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        connection.Open()
+
+        If connection.State = ConnectionState.Open Then
+            MsgBox("The connection is: " & connection.State.ToString)
+
+        End If
         Labelwelcome.Location = New Point(Labelwelcome.Left - whale.Left, Labelwelcome.Top - whale.Top)
         Labelwelcome.Parent = whale
 
@@ -12,12 +29,6 @@ Public Class Login
         txtboxusername.Parent = whale
 
         txtboxpassword.PasswordChar = "*"c
-
-        'Labelpassword.Location = New Point(Labelpassword.Left - whale.Left, Labelpassword.Top - whale.Top)
-        'Labelpassword.Parent = whale
-
-
-
 
     End Sub
 

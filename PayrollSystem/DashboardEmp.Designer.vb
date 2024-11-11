@@ -65,6 +65,7 @@ Partial Class DashboardEmp
         Btnlogout.BackColor = Color.FromArgb(CByte(158), CByte(188), CByte(159))
         Btnlogout.FlatStyle = FlatStyle.Popup
         Btnlogout.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btnlogout.ForeColor = Color.Black
         Btnlogout.Location = New Point(584, 56)
         Btnlogout.Name = "Btnlogout"
         Btnlogout.Size = New Size(121, 58)

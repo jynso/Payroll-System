@@ -100,6 +100,7 @@ Partial Class Login
         ' 
         ' btnlogin
         ' 
+        btnlogin.BackColor = Color.White
         btnlogin.FlatStyle = FlatStyle.Popup
         btnlogin.Font = New Font("Montserrat Medium", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnlogin.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
@@ -108,7 +109,7 @@ Partial Class Login
         btnlogin.Size = New Size(112, 53)
         btnlogin.TabIndex = 12
         btnlogin.Text = "Login"
-        btnlogin.UseVisualStyleBackColor = True
+        btnlogin.UseVisualStyleBackColor = False
         ' 
         ' whale
         ' 
