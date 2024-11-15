@@ -42,8 +42,8 @@
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb",
               "RelativeDocumentMoniker": "PayrollSystem\\Form1.vb",
-              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb [Design]*",
-              "RelativeToolTip": "PayrollSystem\\Form1.vb [Design]*",
+              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb [Design]",
+              "RelativeToolTip": "PayrollSystem\\Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-11T12:10:17.719Z",
               "EditorCaption": " [Design]"
@@ -54,12 +54,11 @@
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb",
               "RelativeDocumentMoniker": "PayrollSystem\\Form1.vb",
-              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb*",
-              "RelativeToolTip": "PayrollSystem\\Form1.vb*",
+              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb",
+              "RelativeToolTip": "PayrollSystem\\Form1.vb",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAwAsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-11T11:52:04.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T11:52:04.493Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "PayrollSystem\\DashboardEmp.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-11T11:46:26.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T11:46:26.753Z"
             },
             {
               "$type": "Document",
