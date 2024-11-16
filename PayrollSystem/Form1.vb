@@ -1,24 +1,21 @@
 ﻿Imports System.Data.SQLite
 Public Class Login
 
-    Public dbCommand As String = ""
-    Public bindinSrc As BindingSource
-
-    Public dbName As String = "Information.db"
-    Public dbPath As String = Application.StartupPath & "\" & dbName
-    Public connString As String = "Data Source=" & dbPath & ";Version=3"
-
-    Public connection As New SQLiteConnection(connString)
-    Public command As New SQLiteCommand("", connection)
+    Public connString As String = "Data Source=C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\bin\Debug\net8.0-windows\Information.db;Version=3;"
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        connection.Open()
+        'Try
+        '    Using connection As New SQLiteConnection(connString)
+        '        connection.Open()
+        '        MessageBox.Show("Database connection successful!")
+        '    End Using
 
-        If connection.State = ConnectionState.Open Then
-            MsgBox("The connection is: " & connection.State.ToString)
+        'Catch ex As Exception
+        '    MessageBox.Show("Error: " & ex.Message)
+        'End Try
 
-        End If
+
         Labelwelcome.Location = New Point(Labelwelcome.Left - whale.Left, Labelwelcome.Top - whale.Top)
         Labelwelcome.Parent = whale
 
@@ -34,6 +31,6 @@ Public Class Login
 
     Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
         Me.Hide()
-        DashboardAdmin.Show()
+        DashboardEmp.Show()
     End Sub
 End Class

@@ -1,6 +1,8 @@
 ﻿Imports System.Data.Entity
+Imports System.Data.SQLite
 
 Public Class DashboardEmp
+    Public connString As String = "Data Source=C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\bin\Debug\net8.0-windows\Information.db;Version=3;"
     Private Sub DashboardEmp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'For rounded corners
         Dim gp As New System.Drawing.Drawing2D.GraphicsPath()
@@ -15,12 +17,24 @@ Public Class DashboardEmp
 
         Panel1.Region = New Region(gp)
 
-        'for database
-        Dim SQLite_conn As SQLite.SQLiteConnection
-        SQLite_conn = New SQLite.SQLiteConnection("Data source=C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\Information.db;")
-        SQLite_conn.Open()
-        SQLite_conn.Close()
-        MsgBox("Database Connected.", vbOKOnly)
+        LoadData()
+
+    End Sub
+
+    Private Sub LoadData()
+        Try
+            Using connection As New SQLiteConnection(connString)
+                connection.Open()
+                Dim query As String = "SELECT * FROM Details"
+                Dim adapter As New SQLiteDataAdapter(query, connection)
+                Dim dataTable As New DataTable()
+
+                adapter.Fill(dataTable) ' Fill the DataTable with data
+                ListBox1.DataSource = dataTable ' Bind the DataTable to the DataGridView
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
 
     End Sub
 End Class
