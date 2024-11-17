@@ -23,10 +23,9 @@ Partial Class ManageEmp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Btnback = New Button()
-        LBdisplay = New ListBox()
         btnadd = New Button()
-        btnedit = New Button()
         btndel = New Button()
+        lbdisplay = New ListBox()
         SuspendLayout()
         ' 
         ' Btnback
@@ -41,51 +40,38 @@ Partial Class ManageEmp
         Btnback.Text = "Back"
         Btnback.UseVisualStyleBackColor = False
         ' 
-        ' LBdisplay
-        ' 
-        LBdisplay.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LBdisplay.FormattingEnabled = True
-        LBdisplay.ItemHeight = 27
-        LBdisplay.Location = New Point(58, 89)
-        LBdisplay.Name = "LBdisplay"
-        LBdisplay.Size = New Size(397, 220)
-        LBdisplay.TabIndex = 21
-        ' 
         ' btnadd
         ' 
         btnadd.BackColor = Color.FromArgb(CByte(115), CByte(146), CByte(240))
         btnadd.FlatStyle = FlatStyle.Popup
         btnadd.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnadd.Location = New Point(58, 344)
+        btnadd.Location = New Point(87, 344)
         btnadd.Name = "btnadd"
-        btnadd.Size = New Size(83, 48)
+        btnadd.Size = New Size(138, 48)
         btnadd.TabIndex = 22
         btnadd.Text = "Add"
         btnadd.UseVisualStyleBackColor = False
-        ' 
-        ' btnedit
-        ' 
-        btnedit.BackColor = Color.FromArgb(CByte(227), CByte(155), CByte(127))
-        btnedit.FlatStyle = FlatStyle.Popup
-        btnedit.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnedit.Location = New Point(210, 344)
-        btnedit.Name = "btnedit"
-        btnedit.Size = New Size(83, 48)
-        btnedit.TabIndex = 23
-        btnedit.Text = "Edit"
-        btnedit.UseVisualStyleBackColor = False
         ' 
         ' btndel
         ' 
         btndel.BackColor = Color.FromArgb(CByte(207), CByte(105), CByte(119))
         btndel.FlatStyle = FlatStyle.Popup
         btndel.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btndel.Location = New Point(349, 344)
+        btndel.Location = New Point(294, 344)
         btndel.Name = "btndel"
-        btndel.Size = New Size(106, 48)
+        btndel.Size = New Size(138, 48)
         btndel.TabIndex = 24
         btndel.Text = "Delete"
         btndel.UseVisualStyleBackColor = False
+        ' 
+        ' lbdisplay
+        ' 
+        lbdisplay.FormattingEnabled = True
+        lbdisplay.ItemHeight = 25
+        lbdisplay.Location = New Point(58, 92)
+        lbdisplay.Name = "lbdisplay"
+        lbdisplay.Size = New Size(397, 229)
+        lbdisplay.TabIndex = 25
         ' 
         ' ManageEmp
         ' 
@@ -93,10 +79,9 @@ Partial Class ManageEmp
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(236), CByte(203), CByte(217))
         ClientSize = New Size(536, 435)
+        Controls.Add(lbdisplay)
         Controls.Add(btndel)
-        Controls.Add(btnedit)
         Controls.Add(btnadd)
-        Controls.Add(LBdisplay)
         Controls.Add(Btnback)
         FormBorderStyle = FormBorderStyle.None
         Name = "ManageEmp"
@@ -106,8 +91,7 @@ Partial Class ManageEmp
     End Sub
 
     Friend WithEvents Btnback As Button
-    Friend WithEvents LBdisplay As ListBox
     Friend WithEvents btnadd As Button
-    Friend WithEvents btnedit As Button
     Friend WithEvents btndel As Button
+    Friend WithEvents lbdisplay As ListBox
 End Class
