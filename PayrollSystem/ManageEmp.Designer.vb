@@ -23,7 +23,7 @@ Partial Class ManageEmp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Btnback = New Button()
-        Panel1 = New Panel()
+        LBdisplay = New ListBox()
         SuspendLayout()
         ' 
         ' Btnback
@@ -38,13 +38,15 @@ Partial Class ManageEmp
         Btnback.Text = "Back"
         Btnback.UseVisualStyleBackColor = False
         ' 
-        ' Panel1
+        ' LBdisplay
         ' 
-        Panel1.AutoScroll = True
-        Panel1.Location = New Point(22, 87)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(455, 292)
-        Panel1.TabIndex = 21
+        LBdisplay.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        LBdisplay.FormattingEnabled = True
+        LBdisplay.ItemHeight = 27
+        LBdisplay.Location = New Point(21, 89)
+        LBdisplay.Name = "LBdisplay"
+        LBdisplay.Size = New Size(456, 274)
+        LBdisplay.TabIndex = 21
         ' 
         ' ManageEmp
         ' 
@@ -52,7 +54,7 @@ Partial Class ManageEmp
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(236), CByte(203), CByte(217))
         ClientSize = New Size(500, 407)
-        Controls.Add(Panel1)
+        Controls.Add(LBdisplay)
         Controls.Add(Btnback)
         FormBorderStyle = FormBorderStyle.None
         Name = "ManageEmp"
@@ -62,5 +64,5 @@ Partial Class ManageEmp
     End Sub
 
     Friend WithEvents Btnback As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents LBdisplay As ListBox
 End Class

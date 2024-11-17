@@ -17,24 +17,7 @@ Public Class DashboardEmp
 
         Panel1.Region = New Region(gp)
 
-        LoadData()
 
     End Sub
 
-    Private Sub LoadData()
-        Try
-            Using connection As New SQLiteConnection(connString)
-                connection.Open()
-                Dim query As String = "SELECT * FROM Details"
-                Dim adapter As New SQLiteDataAdapter(query, connection)
-                Dim dataTable As New DataTable()
-
-                adapter.Fill(dataTable) ' Fill the DataTable with data
-                ListBox1.DataSource = dataTable ' Bind the DataTable to the DataGridView
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        End Try
-
-    End Sub
 End Class

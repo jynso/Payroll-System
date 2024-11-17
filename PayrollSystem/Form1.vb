@@ -31,6 +31,6 @@ Public Class Login
 
     Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
         Me.Hide()
-        DashboardEmp.Show()
+        DashboardAdmin.Show()
     End Sub
 End Class

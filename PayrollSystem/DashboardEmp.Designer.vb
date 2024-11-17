@@ -26,8 +26,6 @@ Partial Class DashboardEmp
         Labelhello = New Label()
         Panel1 = New Panel()
         Btnlogout = New Button()
-        ListBox1 = New ListBox()
-        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Labelname
@@ -57,7 +55,6 @@ Partial Class DashboardEmp
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(227), CByte(165), CByte(135))
-        Panel1.Controls.Add(ListBox1)
         Panel1.Location = New Point(47, 195)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(658, 306)
@@ -76,15 +73,6 @@ Partial Class DashboardEmp
         Btnlogout.Text = "Log out"
         Btnlogout.UseVisualStyleBackColor = False
         ' 
-        ' ListBox1
-        ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 25
-        ListBox1.Location = New Point(0, 0)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(379, 204)
-        ListBox1.TabIndex = 0
-        ' 
         ' DashboardEmp
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -99,7 +87,6 @@ Partial Class DashboardEmp
         Name = "DashboardEmp"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardEmp"
-        Panel1.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -108,5 +95,4 @@ Partial Class DashboardEmp
     Friend WithEvents Labelhello As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Btnlogout As Button
-    Friend WithEvents ListBox1 As ListBox
 End Class
