@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\dashboardemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\dashboardemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\dashboardemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\dashboardemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\manageemp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|c:\\users\\ecwt2\\source\\repos\\payrollsystem\\payrollsystem\\dashboardadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5AD40AC7-5A40-4959-B08D-CEEECFCF4A1F}|PayrollSystem\\PayrollSystem.vbproj|solutionrelative:payrollsystem\\dashboardadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,32 +42,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardEmp.vb",
+              "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardEmp.vb",
+              "RelativeDocumentMoniker": "PayrollSystem\\DashboardEmp.vb",
+              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardEmp.vb",
+              "RelativeToolTip": "PayrollSystem\\DashboardEmp.vb",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-18T03:31:14.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DashboardEmp.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardEmp.vb",
+              "RelativeDocumentMoniker": "PayrollSystem\\DashboardEmp.vb",
+              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardEmp.vb [Design]",
+              "RelativeToolTip": "PayrollSystem\\DashboardEmp.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-18T03:31:12.114Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardAdmin.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardAdmin.vb",
+              "RelativeDocumentMoniker": "PayrollSystem\\DashboardAdmin.vb",
+              "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\DashboardAdmin.vb [Design]",
+              "RelativeToolTip": "PayrollSystem\\DashboardAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-18T00:57:43.423Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb",
               "RelativeDocumentMoniker": "PayrollSystem\\Form1.vb",
               "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\Form1.vb",
               "RelativeToolTip": "PayrollSystem\\Form1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T14:40:37.088Z"
+              "WhenOpened": "2024-11-16T14:40:37.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ManageEmp.vb",
               "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\ManageEmp.vb",
               "RelativeDocumentMoniker": "PayrollSystem\\ManageEmp.vb",
               "ToolTip": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\ManageEmp.vb",
               "RelativeToolTip": "PayrollSystem\\ManageEmp.vb",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-16T14:39:36.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ManageEmp.vb [Design]",
               "DocumentMoniker": "C:\\Users\\ecwt2\\source\\repos\\PayrollSystem\\PayrollSystem\\ManageEmp.vb",
               "RelativeDocumentMoniker": "PayrollSystem\\ManageEmp.vb",

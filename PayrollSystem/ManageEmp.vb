@@ -1,8 +1,5 @@
-﻿Imports System.Configuration
-Imports System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder
-Imports System.Data.Entity.Infrastructure
-Imports System.Data.SQLite
-Imports System.DirectoryServices.ActiveDirectory
+﻿Imports System.Data.SQLite
+
 Public Class ManageEmp
 
     Public connString As String = "Data Source=C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\bin\Debug\net8.0-windows\Information.db;Version=3;"
@@ -12,6 +9,13 @@ Public Class ManageEmp
         connection = New SQLiteConnection(connString)
         connection.Open()
 
+        If connection.State = ConnectionState.Open Then
+            Loaduserdata()
+        End If
+
+    End Sub
+
+    Private Sub Loaduserdata()
         If connection.State = ConnectionState.Open Then
 
             Dim command As New SQLiteCommand()
@@ -24,18 +28,15 @@ Public Class ManageEmp
             Dim dataTable As New DataTable
             dataTable.Load(rdr)
 
-            'lbdisplay.DataSource = dataTable
-
             For Each row As DataRow In dataTable.Rows
 
-                Dim displayText As String = $"{row("Id")} - {row("Name")} -  {row("Base_Salary")} - {row("Hour_Rate")}"
+                Dim displayText As String = $"{row("Id")} - {row("Name")} - {row("Password")} -  {row("Base_Salary")} - {row("Hour_Rate")}"
                 lbdisplay.Items.Add(displayText)
             Next
         End If
 
-
-
     End Sub
+
     Private Sub Btnback_Click(sender As Object, e As EventArgs) Handles Btnback.Click
         Close()
     End Sub
@@ -52,18 +53,21 @@ Public Class ManageEmp
         Dim salary As Decimal
         Decimal.TryParse(salaryinput, salary)
 
+        Dim pass As String = InputBox("Enter password:", "Add User")
+
         Dim rateinput As String = InputBox("Enter hour rate:", "Add User")
         Dim rate As Integer
         Integer.TryParse(rateinput, rate)
 
-        Dim insertCommand As New SQLiteCommand("INSERT INTO Details (Id, Name, Base_Salary, Hour_Rate) VALUES (@Name, @Base_Salary, @Hour_Rate)", connection)
+        Dim insertCommand As New SQLiteCommand("INSERT INTO Details (Id, Name, Password, Base_Salary, Hour_Rate) VALUES (@Id, @Name, @Password, @Base_Salary, @Hour_Rate)", connection)
         insertCommand.Parameters.AddWithValue("@Id", id)
         insertCommand.Parameters.AddWithValue("@Name", name)
+        insertCommand.Parameters.AddWithValue("@Password", pass)
         insertCommand.Parameters.AddWithValue("@Base_Salary", salary)
         insertCommand.Parameters.AddWithValue("@Hour_Rate", rate)
+        insertCommand.ExecuteNonQuery()
 
-        Dim displayText As String = $"{id} - {name} - {salary} - {rate}"
-        lbdisplay.Items.Add(displayText)
+        Loaduserdata()
     End Sub
 
     Private Sub btndel_Click(sender As Object, e As EventArgs) Handles btndel.Click
@@ -81,7 +85,7 @@ Public Class ManageEmp
         Dim rowsAffected As Integer = deleteCommand.ExecuteNonQuery()
         lbdisplay.Items.Remove(lbdisplay.SelectedItem)
 
-
+        Loaduserdata()
 
     End Sub
 End Class

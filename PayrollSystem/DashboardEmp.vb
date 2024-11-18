@@ -20,4 +20,9 @@ Public Class DashboardEmp
 
     End Sub
 
+    Private Sub Btnlogout_Click(sender As Object, e As EventArgs) Handles Btnlogout.Click
+
+        Login.Show()
+        Me.Hide()
+    End Sub
 End Class
