@@ -1,12 +1,13 @@
 ﻿Imports System.Data.SQLite
 Public Class Login
 
+
     Dim adminUsername As String = "admin"
     Dim adminPassword As String = "admin"
 
     Public connString As String = "Data Source=C:\Users\ecwt2\source\repos\PayrollSystem\PayrollSystem\bin\Debug\net8.0-windows\Information.db;Version=3;"
     Public connection As SQLiteConnection
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         connection = New SQLiteConnection(connString)
         connection.Open()
@@ -24,16 +25,15 @@ Public Class Login
 
     End Sub
 
-    Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
+    Public Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
 
-        Dim username As String = txtboxusername.Text.Trim()
-        Dim password As String = txtboxpassword.Text.Trim()
+        username = txtboxusername.Text
+        Dim password As String = txtboxpassword.Text
 
         If String.IsNullOrEmpty(username) OrElse String.IsNullOrEmpty(password) Then
             MessageBox.Show("Error please try again", "Login Error", MessageBoxButtons.OK)
             Return
         End If
-
 
         If username = adminPassword AndAlso password = adminUsername Then
             DashboardAdmin.Show()
@@ -41,7 +41,6 @@ Public Class Login
             txtboxusername.Text = ""
             txtboxpassword.Text = ""
         End If
-
 
         Dim query As String = "SELECT COUNT(*) FROM Details WHERE Name = @Name AND Password = @Password"
         Dim command As New SQLiteCommand(query, connection)
@@ -59,4 +58,5 @@ Public Class Login
 
         End If
     End Sub
+
 End Class

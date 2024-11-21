@@ -63,7 +63,7 @@ Partial Class Login
         txtboxpassword.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtboxpassword.Location = New Point(276, 405)
         txtboxpassword.Name = "txtboxpassword"
-        txtboxpassword.Size = New Size(229, 32)
+        txtboxpassword.Size = New Size(217, 32)
         txtboxpassword.TabIndex = 16
         ' 
         ' Labelusername
@@ -83,7 +83,7 @@ Partial Class Login
         txtboxusername.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtboxusername.Location = New Point(264, 277)
         txtboxusername.Name = "txtboxusername"
-        txtboxusername.Size = New Size(241, 32)
+        txtboxusername.Size = New Size(229, 32)
         txtboxusername.TabIndex = 14
         ' 
         ' Labelwelcome
@@ -114,7 +114,7 @@ Partial Class Login
         ' whale
         ' 
         whale.Image = CType(resources.GetObject("whale.Image"), Image)
-        whale.Location = New Point(-396, -114)
+        whale.Location = New Point(-391, -114)
         whale.Name = "whale"
         whale.Size = New Size(942, 423)
         whale.SizeMode = PictureBoxSizeMode.Zoom

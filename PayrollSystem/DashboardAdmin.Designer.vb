@@ -24,9 +24,10 @@ Partial Class DashboardAdmin
     Public Sub InitializeComponent()
         Labelhello = New Label()
         Labelname = New Label()
-        Btnpayslip = New Button()
         Btnlogout = New Button()
-        Btnmanage = New Button()
+        lbdisplay = New ListBox()
+        btnadd = New Button()
+        btndel = New Button()
         SuspendLayout()
         ' 
         ' Labelhello
@@ -53,19 +54,6 @@ Partial Class DashboardAdmin
         Labelname.TabIndex = 15
         Labelname.Text = "Admin"
         ' 
-        ' Btnpayslip
-        ' 
-        Btnpayslip.BackColor = Color.FromArgb(CByte(211), CByte(184), CByte(140))
-        Btnpayslip.FlatStyle = FlatStyle.Popup
-        Btnpayslip.Font = New Font("Montserrat", 10.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btnpayslip.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
-        Btnpayslip.Location = New Point(397, 255)
-        Btnpayslip.Name = "Btnpayslip"
-        Btnpayslip.Size = New Size(285, 233)
-        Btnpayslip.TabIndex = 17
-        Btnpayslip.Text = "Generate Payslip"
-        Btnpayslip.UseVisualStyleBackColor = False
-        ' 
         ' Btnlogout
         ' 
         Btnlogout.BackColor = Color.FromArgb(CByte(158), CByte(188), CByte(159))
@@ -78,18 +66,39 @@ Partial Class DashboardAdmin
         Btnlogout.Text = "Log out"
         Btnlogout.UseVisualStyleBackColor = False
         ' 
-        ' Btnmanage
+        ' lbdisplay
         ' 
-        Btnmanage.BackColor = Color.FromArgb(CByte(211), CByte(184), CByte(140))
-        Btnmanage.FlatStyle = FlatStyle.Popup
-        Btnmanage.Font = New Font("Montserrat", 10.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btnmanage.ForeColor = Color.FromArgb(CByte(35), CByte(9), CByte(3))
-        Btnmanage.Location = New Point(51, 255)
-        Btnmanage.Name = "Btnmanage"
-        Btnmanage.Size = New Size(285, 233)
-        Btnmanage.TabIndex = 18
-        Btnmanage.Text = "Manage Employees"
-        Btnmanage.UseVisualStyleBackColor = False
+        lbdisplay.Font = New Font("Montserrat", 10.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbdisplay.FormattingEnabled = True
+        lbdisplay.ItemHeight = 30
+        lbdisplay.Location = New Point(63, 200)
+        lbdisplay.Name = "lbdisplay"
+        lbdisplay.Size = New Size(619, 214)
+        lbdisplay.TabIndex = 26
+        ' 
+        ' btnadd
+        ' 
+        btnadd.BackColor = Color.FromArgb(CByte(115), CByte(146), CByte(240))
+        btnadd.FlatStyle = FlatStyle.Popup
+        btnadd.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnadd.Location = New Point(166, 462)
+        btnadd.Name = "btnadd"
+        btnadd.Size = New Size(138, 48)
+        btnadd.TabIndex = 27
+        btnadd.Text = "Add"
+        btnadd.UseVisualStyleBackColor = False
+        ' 
+        ' btndel
+        ' 
+        btndel.BackColor = Color.FromArgb(CByte(207), CByte(105), CByte(119))
+        btndel.FlatStyle = FlatStyle.Popup
+        btndel.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btndel.Location = New Point(431, 462)
+        btndel.Name = "btndel"
+        btndel.Size = New Size(138, 48)
+        btndel.TabIndex = 28
+        btndel.Text = "Delete"
+        btndel.UseVisualStyleBackColor = False
         ' 
         ' DashboardAdmin
         ' 
@@ -97,9 +106,10 @@ Partial Class DashboardAdmin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(244), CByte(242), CByte(243))
         ClientSize = New Size(743, 618)
+        Controls.Add(btndel)
+        Controls.Add(btnadd)
+        Controls.Add(lbdisplay)
         Controls.Add(Btnlogout)
-        Controls.Add(Btnmanage)
-        Controls.Add(Btnpayslip)
         Controls.Add(Labelname)
         Controls.Add(Labelhello)
         FormBorderStyle = FormBorderStyle.FixedSingle
@@ -114,8 +124,8 @@ Partial Class DashboardAdmin
     Friend WithEvents Labelhello As Label
     Friend WithEvents Labelname As Label
     Friend WithEvents Labelmanage As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Btnpayslip As Button
     Friend WithEvents Btnlogout As Button
-    Friend WithEvents Btnmanage As Button
+    Friend WithEvents lbdisplay As ListBox
+    Friend WithEvents btnadd As Button
+    Friend WithEvents btndel As Button
 End Class
