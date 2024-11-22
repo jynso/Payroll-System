@@ -22,6 +22,7 @@ Partial Class DashboardAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Public Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardAdmin))
         Labelhello = New Label()
         Labelname = New Label()
         Btnlogout = New Button()
@@ -113,6 +114,7 @@ Partial Class DashboardAdmin
         Controls.Add(Labelname)
         Controls.Add(Labelhello)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
         Name = "DashboardAdmin"

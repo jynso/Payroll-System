@@ -136,6 +136,7 @@ Partial Class Login
         Controls.Add(btnlogin)
         Controls.Add(dolphin)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
         Name = "Login"

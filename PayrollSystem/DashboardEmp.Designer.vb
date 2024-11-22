@@ -22,6 +22,7 @@ Partial Class DashboardEmp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardEmp))
         labelname = New Label()
         Labelhello = New Label()
         Panel1 = New Panel()
@@ -352,6 +353,7 @@ Partial Class DashboardEmp
         Controls.Add(Panel1)
         ForeColor = SystemColors.Control
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
         Name = "DashboardEmp"
