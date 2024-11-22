@@ -351,7 +351,11 @@ Partial Class DashboardEmp
         Controls.Add(Labelhello)
         Controls.Add(Panel1)
         ForeColor = SystemColors.Control
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "DashboardEmp"
+        ShowIcon = False
         StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardEmp"
         Panel1.ResumeLayout(False)

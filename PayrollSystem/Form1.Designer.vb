@@ -60,7 +60,7 @@ Partial Class Login
         ' 
         ' txtboxpassword
         ' 
-        txtboxpassword.Font = New Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtboxpassword.Font = New Font("Montserrat", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtboxpassword.Location = New Point(276, 405)
         txtboxpassword.Name = "txtboxpassword"
         txtboxpassword.Size = New Size(217, 32)
@@ -136,7 +136,11 @@ Partial Class Login
         Controls.Add(btnlogin)
         Controls.Add(dolphin)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "Login"
+        ShowIcon = False
+        ShowInTaskbar = False
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
         CType(dolphin, ComponentModel.ISupportInitialize).EndInit()
