@@ -77,7 +77,7 @@ Public Class DashboardAdmin
 
         Dim bonusinput As String = InputBox("Enter bonus pay")
         Dim bonus As Integer
-        Integer.TryParse(bonusinput, ot)
+        Integer.TryParse(bonusinput, bonus)
 
         Dim incomeinput As String = InputBox("Enter Income tax deduction")
         Dim income As Integer

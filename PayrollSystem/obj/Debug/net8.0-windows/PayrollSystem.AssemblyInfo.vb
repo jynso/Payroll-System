@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("PayrollSystem"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b2fe0d6aed6cb539799c9986bb72ff92af09904"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42ae2b621ed48a238fc353e4e7b40d58de0583d9"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PayrollSystem"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PayrollSystem"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

@@ -113,6 +113,8 @@ Partial Class DashboardAdmin
         Controls.Add(Labelname)
         Controls.Add(Labelhello)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "DashboardAdmin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardAdmin"

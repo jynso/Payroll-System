@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SQLite
-Imports System.Net
 
 Public Class DashboardEmp
 
@@ -35,7 +34,7 @@ Public Class DashboardEmp
             Dim hourrate As Integer = Convert.ToInt32(reader("Hour_Rate"))
             Dim overtime As Integer = Convert.ToInt32(reader("Overtime"))
             Dim bonus As Integer = Convert.ToInt32(reader("Bonus"))
-            Dim incometax As Integer = Convert.ToInt32(reader("Income_Tax"))
+            Dim incometax As Double = Convert.ToDouble(reader("Income_Tax"))
 
             namedepends.Text = reader("Name")
             ratedepends.Text = reader("Hour_Rate")
@@ -43,9 +42,11 @@ Public Class DashboardEmp
             bonusdepends.Text = reader("Bonus")
             incometaxtxt.Text = reader("Income_Tax")
 
+            Dim taxdouble As Double = incometax / 100
+
             Dim regularpay As Integer = hourswork * hourrate
-            Dim grosspay As Integer = regularpay + overtime + bonus
-            Dim tax As Integer = grosspay * incometax
+            Dim grosspay As Integer = regularpay + overtime
+            Dim tax As Double = grosspay * taxdouble
             Dim netpay As Integer = grosspay - tax
 
             regularpaytxt.Text = regularpay
